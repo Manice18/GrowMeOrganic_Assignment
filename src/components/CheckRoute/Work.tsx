@@ -3,7 +3,7 @@ import SecondPage from '../SecondPage/SecondPage'
 import { useSelector } from 'react-redux'
 
 const Work = () => {
-  const access = useSelector((state)=> state.access.value)
+  const access = useSelector((state: any)=> state.access.value)
   if(!access){
     return <><Navigate replace to="/" />
     {
