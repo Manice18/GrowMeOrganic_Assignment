@@ -4,11 +4,6 @@ import { Box,Checkbox,FormControlLabel } from "@mui/material"
 
 
 const CheckBox = () => {
-    // React.useEffect(()=>{
-    //     checkData.map((item)=>{
-    //         item.sub_departments.map((item1)=>console.log(item1))
-    //     },[])
-    // })
     const [checked, setChecked] = React.useState([true, false]);
     
   const handleChange1 = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,10 +12,6 @@ const CheckBox = () => {
 
   const handleChange2 = (event: React.ChangeEvent<HTMLInputElement>) => {
     setChecked([event.target.checked, checked[1]]);
-  };
-
-  const handleChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setChecked([checked[0], event.target.checked]);
   };
 
   return (
