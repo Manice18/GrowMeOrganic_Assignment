@@ -51,7 +51,7 @@ const SecondPage: FC = () => {
         editable: true,
       },
     ];
-    const rows = data
+    const rows:any = data
   return (
     <>
     {
